@@ -1,17 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>ast-pres</title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but ast-pres doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
+</head>
+<body>
+<div id="app">
+    <div class="page-container">
+        <div class="top-menu  container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-md-4 logo"><img src="img/logo.svg" alt=""></div>
+                    <div class="col-6 col-md-8">
+                        <div class="contacts">
+                            <span>Тел.: +7(495) 150-44-00</span> <span>e-mail: info@rodnoeslovo.ru</span>
+                        </div>
+                        <div class="menu d-none d-md-block">
+                            <ul>
+                                <li @click="scrollTo('.start')">В начало</li>
+                                <li @click="scrollTo('.principles')">Принципы</li>
+                                <li @click="scrollTo('.contents')">Содержание</li>
+                                <li @click="scrollTo('.results')">Результаты</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="start fluid-container">
+            <div class="container">
+                <div class="reg-list" :class="{folded: regFolded}">
+                    <ol>
+                        <li>Кемеровская область</li>
+                        <li>Краснодарский край</li>
+                        <li>Ленинградская область</li>
+                        <li>Московская область</li>
+                        <li>Мурманская область</li>
+                        <li>Нижегородская область</li>
+                        <li>Пермский край</li>
+                        <li>Республика Бурятия</li>
+                        <li>Республика Крым</li>
+                        <li>Республика Саха (Якутия)</li>
+                        <li>Ростовская область</li>
+                        <li>Саратовская область</li>
+                        <li>Свердловская область</li>
+                        <li>Севастополь, г.</li>
+                        <li>Тюменская область</li>
+                        <li>Ульяновская область</li>
+                        <li>Ханты-Мансийский автономный округ — Югра</li>
+                        <li>Чеченская Республика</li>
+                    </ol>
+                    <div class="fold" @click="regToggle"><img src="img/fold-icon.png" alt=""></div>
+                </div>
+                <div class="row header">
+                    <div class="gerb ">
+                        <img src="img/gerb.png" alt="">
+                    </div>
+                    <div class="title ">
+                        <h1>Край Родной - Моя Россия</h1>
+                        <div class="desc">Этнографический образовательный проект</div>
+                    </div>
+                </div>
+                <div class="map"><img src="img/map.png" alt=""></div>
+                <div class="legend">
+                    <div><img src="img/blue-point.svg" alt=""><span>Субъекты РФ, в которых уже реализован проект.</span>
+                    </div>
+                    <div><img src="img/red-point.svg" alt=""><span>Субъекты РФ, в которых планируется запуск проекта в 2019-2020 годах.</span>
+                    </div>
+                </div>
+                <div class="info-box">
+                    Творческое воспитание гармонично развитой и социально ответственной личности на основе
+                    духовно-нравственных ценностей народов Российской Федераций, исторических и национально-культурных
+                    традиций
+                </div>
+
+            </div>
+        </div>
+        <div class="fluid-container principles">
+            <div class="header red">Принципы</div>
+            <div class="container">
+                <h2>ГРАЖДАНСКАЯ ИДЕНТИЧНОСТЬ</h2>
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <div class="info-block ">
+                            <div class="title">
+                                <img src="img/self-ident.png" alt="">
+                                <h3>Самоидентификация</h3>
+                            </div>
+                            <div class="text">
+                                Знание истории, культуры, традиций, природы родного края способствует формированию
+                                личности и
+                                самоидентификации человека в дошкольном и младшем школьном возрасте.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="info-block ">
+                            <div class="title">
+                                <img src="img/soc-skills.png" alt="">
+                                <h3>Социальные навыки</h3>
+                            </div>
+                            <div class="text">
+                                Умение работать в команде, уважение к людям, знание родного языка, понимание образа
+                                мыслей других народов способствуют эффективной межличностной и межкультурной
+                                коммуникации.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="info-block ">
+                            <div class="title">
+                                <img src="img/creativity.png" alt="">
+                                <h3>Творческое развите</h3>
+                            </div>
+                            <div class="text">
+                                Ориентация на практику и прикладную направленность. Созидание и творчество – основа
+                                сохранения ациональных культурных традиций.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="info-block ">
+                            <div class="title">
+                                <img src="img/humanity.png" alt="">
+                                <h3>Человек и общество</h3>
+                            </div>
+                            <div class="text">
+                                Этнографическая среда отвечает требованиям современности. Приобретённые компетенции и
+                                навыки – основа формирования общества будущего.
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="fluid-container contents">
+            <div class="header red">Содержание</div>
+            <div class="container">
+                <h2>Социальная платформа творческого роста</h2>
+                <div class="meta">
+                    <div class="count">85 субьектов Российской Федерации</div>
+                    <div class="details">
+                        <ul>
+                            <li>символика</li>
+                            <li>история и будущее</li>
+                            <li>культурное многообразие</li>
+                            <li>быт и традиции</li>
+                            <li>язык</li>
+                            <li>природа и экология</li>
+                            <li>экономика</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-header blue">КРАЕВЕДЧЕСКИЕ ПРОГРАММЫ НОВОГО ТИПА</div>
+            <div class="container programs">
+                <div class="row">
+                    <div class="col-12 col-md-5 order-2 order-md-1">
+                        <ul class="">
+                            <li>Ежегодно обновляемые межпредметные пособия нового типа и рабочие тетради</li>
+                            <li>Лингвокраеведческие словари с описанием ключевых понятий национальной истории и
+                                региональной культуры
+                            </li>
+                            <li>Адаптация контента под разные потребности участников образовательного процесса</li>
+                            <li>Развитие межпредметных связей и УУД</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-7 order-1 order-md-2">
+                        <img src="img/books.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fluid-container books-slider">
+            <div class="container">
+                <div class="slider">
+                    <div class="left-btn"><img src="img/right-arrow.svg" alt=""></div>
+                    <div class="display"><img src="img/book-pages.jpg" alt=""></div>
+                    <div class="right-btn"><img src="img/right-arrow.svg" alt=""></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fluid-container books-examples">
+            <div class="top-border"></div>
+            <div class="container">
+                <img src="img/rost-obl.png" class="rost" alt="">
+                <img src="img/sar-obl.png" class="sar" alt="">
+                <img src="img/krasn-kr.png" class="kras" alt="">
+                <img src="img/msk.png" class="msk" alt="">
+                <div class="info">
+                    До окончания 2019 года будут изданы новые учебные пособия: «Моя Ростовская область», «Моя
+                    Саратовская область», «Моя Ленинградская область», «Мой Краснодарский край», «Моя Московская
+                    область»
+                </div>
+            </div>
+
+            <div class="bottom-border"></div>
+        </div>
+
+        <div class="fluid-container etno">
+            <div class="sub-header blue">ЭТНОГРАФИЧЕСКАЯ СОЦИАЛЬНАЯ СЕТЬ</div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 order-2 col-md-6 order-md-2">
+                        <ul>
+                            <li>Общенациональная образовательная социальная сеть для детей, педагогов и родителей</li>
+                            <li>Совместное творчество, командная работа, игровые практики в образовании</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 order-1 col-md-6 order-md-2"><img src="img/little-peoples.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="fluid-container methodics">
+            <div class="sub-header blue">МЕТОДИЧЕСКАЯ ПОДДЕРЖКА ПЕДАГОГОВ</div>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-12 col-md-6 text-center"><img src="img/scheme.png" alt=""></div>
+                    <div class="col-12 col-md-6">
+                        <ul>
+                            <li>Методические рекомендации</li>
+                            <li>Методическая онлайн-поддержка преподавателей</li>
+                            <li>Разработки уроков и внеурочных мероприятий</li>
+                            <li>Мастер-классы авторов — квалифицированных мастеров-педагогов и участников проекта</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fluid-container master-classes">
+            <div class="sub-header blue">МАСТЕР-КЛАССЫ</div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="pic"><img src="img/master-class1.jpg" alt="" @click="showVideo('master1')"></div>
+                        <div class="text">
+                            Мастер класс проводит Наина Величко — известный художник и педагог. Участник международных
+                            фестивалей и выставок, обладатель медали и диплома Союза дизайнеров России
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="pic"><img src="img/master-class2.jpg" alt="" @click="showVideo('master1')"></div>
+                        <div class="text">
+                            Мастер-класс проводит Татьяна Николаевна Проснякова — руководитель сайта Страна Мастеров, автор
+                            учебников и книг по художественному труду для начальной школы, автор в системе развивающего
+                            обучения, разработанной Л. В. Занковым, ведущая мастер-классов.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fluid-container diorams">
+            <div class="sub-header blue">УЧЕБНЫЕ ДИОРАМЫ — ГЕНЕРАТОРЫ СЧАСТЬЯ</div>
+            <div class="container">
+                <div class="info-box">
+                    Формирование живой экспозиции на основе природы и символов родного края ― инструмента персональной и
+                    коллективной идентификации
+                </div>
+                <div class="dio-item">
+                    <img src="img/dio1.png" alt="">
+                    <div class="dio-info">Диорама «Кубанский двор»</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="fluid-container contests">
+            <div class="sub-header blue">Региональные и всероссийские творческие конкурсы</div>
+            <div class="info-box left blue ">
+                <span>Основные цели конкурсов – воспитание бережного отношения человека к окружающей среде, а также формирование интереса к быту и традициям народов региона, к природе.</span>
+            </div>
+            <div class="info-box right red">
+                <span>Ключевой задачей конкурса является развитие творческого потенциала учащихся через вовлечение в проектную деятельность вместе с родителями и преподавателями.</span>
+            </div>
+        </div>
+
+
+        <div class="fluid-container ugra">
+            <div class="container">
+                <h2>Региональный творческий конкурс «Моя Югра»</h2>
+                <div class="slider">
+
+                    <ul>
+                        <li><img src="img/galery1.jpg" alt=""></li>
+                        <li><img src="img/galery2.jpg" alt=""></li>
+                        <li><img src="img/galery1.jpg" alt=""></li>
+                        <li><img src="img/galery2.jpg" alt=""></li>
+                        <li><img src="img/galery1.jpg" alt=""></li>
+                        <li><img src="img/galery2.jpg" alt=""></li>
+                    </ul>
+                </div>
+                <button class="reference">Перейти</button>
+            </div>
+        </div>
+
+        <div class="fluid-container krym">
+            <div class="container">
+                <h2>Региональный творческий конкурс для Республики Крым и г. Севастополя «Живое слово родного края»</h2>
+                <div class="slider">
+                    <ul>
+                        <li><img src="img/galery_n1.jpg" alt=""></li>
+                        <li><img src="img/galery_n2.jpg" alt=""></li>
+                        <li><img src="img/galery_n1.jpg" alt=""></li>
+                        <li><img src="img/galery_n2.jpg" alt=""></li>
+                        <li><img src="img/galery_n1.jpg" alt=""></li>
+                        <li><img src="img/galery_n2.jpg" alt=""></li>
+                    </ul>
+                </div>
+                <button class="reference">Перейти</button>
+            </div>
+
+        </div>
+
+
+        <div class="fluid-container results">
+            <div class="header red">Результаты</div>
+            <div class="container">
+                <h2>ЭТНОГРАФИЧЕСКАЯ МОЗАИКА</h2>
+                <div class="content">
+                    <div class="info-box left">
+                        Формирование визуального культурного кода как основы национального брендинга Россикйской
+                        федерации
+                    </div>
+                    <div class="info-box right">Поддержка региональных специалистов разного профиля: историков,
+                        этнографоф, краеведов и др.
+                    </div>
+                    <div class="info-box left">Поддержка художественных промыслов, национальных языков, культур народов
+                        России.
+                    </div>
+                    <div class="info-box right">Обеспечивание высокого уровня социальной вовлеченности: учащиеся и
+                        родители, педагоги и воспитатели.
+                    </div>
+                    <div class="info-box left">Эффективная технология формирования важнейших компетенций XXI века у
+                        детей начальных классов.
+                    </div>
+                    <div class="info-box right">Международное развитие - чемпионат «Добрых дел» social skills для детей
+                        5-10 лет
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="fluid-container footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-5">Создатель проекта Научно-образовательный союз развития языковой и информационной
+                        культуры «Родное слово».
+                    </div>
+                    <div class="col-4 text-right"><img src="img/logo.svg" alt=""></div>
+                    <div class="col-3">
+                        <div class="tel">Тел.: +7(495) 150-44-00</div>
+                        <div class="email">mail: info@rodnoeslovo.ru</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <modal v-model="showVideo1" width="660" height="342">
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ACr75ZwScik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+    </modal>
+    <modal v-model="showVideo2" width="660" height="342" >
+        <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ACr75ZwScik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </modal>
+</div>
     <!-- built files will be auto injected -->
-  </body>
+</body>
 </html>

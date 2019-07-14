@@ -1,0 +1,49 @@
+.books-slider{
+  background: rgba(0, 55, 112, 0.7);
+  .container{
+    padding: 80px 0;
+    .slider{
+      width:1020px;
+      margin:auto;
+
+      .left-btn{
+        display: inline-block;
+        width: 16px;
+        img{
+          transform: rotate(180deg);
+        }
+      }
+      .right-btn{
+        display: inline-block;
+        width: 16px;
+      }
+      .display{
+        display: inline-block;
+        width: 948px;
+        margin: 0 13px;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 375px) {
+  .slider{
+    width:100%;
+    max-width: 100%;
+  }
+  .left-btn,.right-btn{
+    width: 21px !important;
+    padding: 0 5px;
+    img{
+      width:11px;
+    }
+  }
+  .display{
+    width:85% !important;
+    margin: 0 !important;
+
+    img{
+      width:100%;
+    }
+  }
+}

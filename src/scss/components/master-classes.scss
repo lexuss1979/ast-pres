@@ -1,0 +1,25 @@
+.master-classes{
+  margin-bottom: 70px;
+  background-color: #1D5DA8;
+  color: white;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  line-height: 26px;
+
+  .container{
+    padding: 60px 110px;
+    .row:first-child{
+      margin-bottom: 50px;
+    }
+    img{
+      border-radius: 8px;
+    }
+  }
+}
+
+@media screen and (max-width: 375px){
+  .master-classes{
+
+  }
+}

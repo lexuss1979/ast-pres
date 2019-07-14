@@ -1,0 +1,125 @@
+.contents{
+  .container{
+    padding: 50px 0;
+  }
+  h2{
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height */
+    margin-left: 45px;
+    color: #0080C9;
+    text-transform: uppercase;
+    text-align: left;
+    width: 50%;
+  }
+
+  .meta{
+    .count{
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
+
+      color: #0080C9;
+    }
+    .details{
+      padding-top: 10px;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 21px;
+      line-height: 26px;
+      text-align: center;
+
+      color: #1D1D1B;
+      ul{
+        margin:0;
+        li{
+          display: inline-block;
+          font-weight: 500;
+          &:before{
+            content:'•';
+            font-weight: 900;
+            font-size: 21px;
+            line-height: 26px;
+            text-align: center;
+            color: #1D1D1B;
+            padding: 0 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .programs{
+    li{
+      list-style: none;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+
+      color: #000000;
+      margin: 14px 0;
+      display: inline-flex;
+
+      &:before{
+        content:'•';
+        padding: 10px;
+        margin-top: -14px;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 42px;
+        line-height: 29px;
+        color: #c90c0f;
+      }
+    }
+    img{
+      display: block;
+      margin: auto;
+      padding: 65px ;
+    }
+  }
+}
+
+@media screen and (max-width: 375px){
+  .contents{
+    h2{
+      font-size: 24px;
+      line-height: 29px;
+    }
+    .container{
+      padding:0;
+      .row{
+        max-width: 100%;
+      }
+    }
+    .count{
+      font-size: 18px !important;
+      line-height: 22px !important;
+    }
+    .details{
+      font-size: 16px !important;
+      line-height: 20px !important;
+    }
+    .programs{
+      img{
+        padding: 10px;
+        width:100%;
+        margin: auto;
+        display: block;
+      }
+
+      ul>li{
+        font-size: 16px !important;
+        line-height: 20px !important;
+        &:before{
+          padding: 6px !important;
+          font-size: 33px;
+        }
+      }
+    }
+  }
+
+}

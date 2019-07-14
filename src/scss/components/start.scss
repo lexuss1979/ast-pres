@@ -1,0 +1,201 @@
+.start {
+  position: relative;
+  padding-top: 97px;
+  &::after {
+    content: "";
+    background: url("/img/rus-bg.jpg") no-repeat center;
+    background-size: cover;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+  }
+  .container{
+    min-height: 768px;
+    position: relative;
+  }
+
+  .title{
+    padding-top: 21px;
+    z-index:10;
+    h1{
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 44px;
+
+      color: #C90C0F;
+
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    }
+    .desc{
+      font-style: normal;
+      font-weight: bold;
+      font-size: 21px;
+      line-height: 26px;
+
+      color: #003770;
+
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    }
+
+  }
+  .reg-list{
+    width: 240px;
+    position:absolute;
+    top:0;
+    right:0;
+    background: rgba(51, 181, 255, 0.7);
+    border-radius: 0px 0px 8px 8px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+
+    color: #000000;
+    z-index:10;
+    padding: 17px 18px;
+    max-width: 256px;
+    ol{
+      margin-left:18px;
+      padding: 0;
+      li:hover{
+        color: white;
+        font-weight: bold;
+      }
+    }
+    .fold{
+      img{
+        display: block;
+        margin: auto;
+        transform: rotate(180deg);
+      }
+      height: 20px;
+    }
+
+    &.folded{
+      ol{
+        display: none;
+      }
+      .fold img{
+        transform: rotate(0deg);
+      }
+    }
+  }
+  .map{
+    position:absolute;
+    top:0;
+    right:0;
+    z-index:5;
+  }
+  .info-box{
+    position:absolute;
+    top: 504px;
+    left: 138px;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    width: 406px;
+    height: 176px;
+    padding: 15px 19px 10px 19px;
+  }
+  .legend{
+    width: 473px;
+    position:absolute;
+    top: 560px;
+    right: 78px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #000000;
+
+    img{
+      margin-right: 10px;
+      display: inline-block;
+      vertical-align: top;
+      padding-bottom: 20px;
+    }
+    span {
+      width: 443px;
+      display: inline-block;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 375px){
+  .start{
+    .map, .legend, .info-box, .reg-list, .header{
+      position: relative;
+      top:0;
+      left: 0;
+      right: 0;
+    }
+
+    .reg-list{
+      width: 100%;
+      max-width: 375px;
+      border-radius: 0;
+    }
+
+    .header{
+      padding: 0 10px;
+      .gerb img{
+        width:80px;
+      }
+      .title{
+        width: 75%;
+        h1{
+          font-weight: bold;
+          font-size: 21px;
+          line-height: 26px;
+        }
+        .desc{
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 17px;
+        }
+      }
+    }
+    .map img{
+      width:100%;
+    }
+    .container{
+      min-height: 300px;
+      position: relative;
+      padding: 0;
+    }
+
+    .legend{
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      padding: 0 10px;
+      width: auto;
+      span{
+        max-width:70%;
+      }
+    }
+    .info-box{
+      width: 100%;
+      border: none;
+      box-shadow: none !important;
+      border-radius: 0;
+      height: 176px;
+      padding: 15px 19px 10px 19px;
+      background: #FFFDF9;
+    }
+
+  }
+
+  .start::after {
+    background: url(/img/rus-bg.jpg) no-repeat -82px 20px;
+    background-size:cover;
+    position: absolute;
+  }
+
+
+}
