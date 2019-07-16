@@ -7,11 +7,11 @@
     font-size: 36px;
     line-height: 44px;
     /* identical to box height */
-    margin-left: 45px;
+    margin-left: 15px;
     color: #0080C9;
     text-transform: uppercase;
     text-align: left;
-    width: 50%;
+    width: 70%;
   }
 
   .meta{
@@ -57,8 +57,8 @@
       list-style: none;
       font-style: normal;
       font-weight: 500;
-      font-size: 24px;
-      line-height: 29px;
+      font-size: 18px;
+      line-height: 22px;
 
       color: #000000;
       margin: 14px 0;
@@ -83,11 +83,14 @@
   }
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 450px){
   .contents{
     h2{
       font-size: 24px;
       line-height: 29px;
+      margin-left:15px;
+      width:80%;
+      padding-top:20px;
     }
     .container{
       padding:0;
@@ -98,19 +101,32 @@
     .count{
       font-size: 18px !important;
       line-height: 22px !important;
+      width: 70%;
+      margin: auto;
+
     }
     .details{
-      font-size: 16px !important;
-      line-height: 20px !important;
+      font-size: 14px !important;
+      line-height: 16px !important;
+      padding: 10px;
+      ul{
+        padding: 0!important;
+      }
+
     }
     .programs{
+      .row{
+        margin:0;
+      }
       img{
         padding: 10px;
         width:100%;
         margin: auto;
         display: block;
       }
-
+      ul{
+        padding:0 !important;
+      }
       ul>li{
         font-size: 16px !important;
         line-height: 20px !important;

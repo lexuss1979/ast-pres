@@ -7,19 +7,49 @@
   font-size: 21px;
   line-height: 26px;
 
-  .container{
-    padding: 60px 110px;
-    .row:first-child{
-      margin-bottom: 50px;
+  .pic, .text{
+    padding-bottom:15px;
+  }
+  .pic{
+    cursor: pointer;
+    &:after{
+      background: url('/img/youtube.png') no-repeat center;
+      content:'';
+      display: block;
+      width: 100px;
+      height: 70px;
+      position: absolute;
+      top: 118px;
+      left: 178px;
     }
+    &:hover{
+      &:after{
+        background: url('/img/youtube-red.png') no-repeat center;
+      }
+    }
+  }
+ 
+
+  .container{
+    padding: 60px 0;
     img{
       border-radius: 8px;
     }
   }
+
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 450px){
   .master-classes{
+    .container{
+      padding: 15px;
+      font-size: 16px !important;
+      line-height: 20px !important;
 
+      img{
+        max-width: 100%;
+        border-radius: 8px;
+      }
+    }
   }
 }

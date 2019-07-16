@@ -26,6 +26,8 @@
         },
         methods: {
             close() {
+                document.getElementById('player1').contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
+                document.getElementById('player2').contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
                 this.$emit('on-close');
                 this.$emit('input',false);
             }
@@ -83,6 +85,7 @@
             transform: translate(0, 0);
             //top: 20%;
             display: block;
+            padding: 20px 0;
         }
 
         .m-modal-dialog {
@@ -93,8 +96,8 @@
             left: 50%;
             top: 50%;
             z-index: 11;
-            background: #FFFFFF;
-            border: 1px solid #000000;
+            background: #003770;;
+            border: 1px solid #003770;;
             box-sizing: border-box;
             box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
             border-radius: 8px;
@@ -108,15 +111,15 @@
             display: none;
 
             .m-modal-close-btn {
-                background: url('/img/add_24px.svg');
+                background: url('/img/icon-close.png');
                 cursor: pointer;
                 position: absolute;
                 top: 10px;
                 right: 17px;
-                width: 17px;
-                height: 17px;
+                width: 50px;
+                height: 50px;
                 border: 0;
-                background-color: #fff;
+                background-color: #003770;
             }
         }
     }

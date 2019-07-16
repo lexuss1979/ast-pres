@@ -1,57 +1,37 @@
 .contests{
-  background: url("/img/kids-collage.png") no-repeat center;
-  height: 671px;
+    .container{
+      margin: 60px auto;
+    }
 
       position: relative;
-      .info-box.left.blue{
-        background: #FFFFFF;
-        border: 3px solid #0080C9;
-        position: absolute;
-        left: 0;
-        top: 107px;
-        width: 59%;
-        margin-left: -3px;
-        text-align: right;
-        span{
-          font-weight: 500;
-          font-size: 21px;
-          line-height: 26px;
-
-          color: #000000;
-          width: 600px;
-          display: inline-block;
-          text-align: left;
-          padding: 33px;
-        }
-      }
-
-  .info-box.right.red{
-    background: #FFFFFF;
-    border: 3px solid #C90C0F;
-    position: absolute;
-    right: 0;
-    top: 396px;
-    width: 59%;
-    text-align: left;
-    margin-right: -3px;
-    span{
-      font-weight: 500;
-      font-size: 21px;
-      line-height: 26px;
-
-      color: #000000;
-      width: 600px;
-      display: inline-block;
-      text-align: right;
-      padding: 33px;
-
+  ul>li{
+    list-style: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    padding-bottom: 40px;
+    display: inline-flex;
+    &:before{
+      content:'•';
+      padding: 10px;
+      margin-top: -14px;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 42px;
+      line-height: 29px;
+      color: #c90c0f;
     }
+  }
+
+  img{
+    width:100%;
+    padding: 0 25px;
   }
 
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 450px){
   .contests{
-    display: none;
+
   }
 }

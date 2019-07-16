@@ -7,7 +7,8 @@
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>ast-pres</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Край родной - моя Россия</title>
 </head>
 <body>
 <div id="app">
@@ -15,10 +16,10 @@
         <div class="top-menu  container-fluid">
             <div class="container">
                 <div class="row">
-                    <div class="col-6 col-md-4 logo"><img src="img/logo.svg" alt=""></div>
-                    <div class="col-6 col-md-8">
+                    <div class="col-5 col-md-4 logo"><img src="img/logo.svg" alt=""></div>
+                    <div class="col-7 col-md-8">
                         <div class="contacts">
-                            <span>Тел.: +7(495) 150-44-00</span> <span>e-mail: info@rodnoeslovo.ru</span>
+                            <span>Тел.: +7(495) 150-44-00</span> <span>E-mail: info@rodnoeslovo.ru</span>
                         </div>
                         <div class="menu d-none d-md-block">
                             <ul>
@@ -47,35 +48,43 @@
                         <li>Пермский край</li>
                         <li>Республика Бурятия</li>
                         <li>Республика Крым</li>
-                        <li>Республика Саха (Якутия)</li>
+                        <li class="active">Республика Саха (Якутия)</li>
                         <li>Ростовская область</li>
                         <li>Саратовская область</li>
                         <li>Свердловская область</li>
                         <li>Севастополь, г.</li>
                         <li>Тюменская область</li>
                         <li>Ульяновская область</li>
-                        <li>Ханты-Мансийский автономный округ — Югра</li>
+                        <li class="active">Ханты-Мансийский автономный округ — Югра</li>
                         <li>Чеченская Республика</li>
                     </ol>
-                    <div class="fold" @click="regToggle"><img src="img/fold-icon.png" alt=""></div>
+                    <div class="fold" @click="regToggle"><span>Регионы</span><img src="img/icon-fold.png" alt=""></div>
                 </div>
                 <div class="row header">
                     <div class="gerb ">
                         <img src="img/gerb.png" alt="">
                     </div>
                     <div class="title ">
-                        <h1>Край Родной - Моя Россия</h1>
+                        <h1>Край родной - моя Россия</h1>
                         <div class="desc">Этнографический образовательный проект</div>
                     </div>
                 </div>
-                <div class="map"><img src="img/map.png" alt=""></div>
-                <div class="legend">
-                    <div><img src="img/blue-point.svg" alt=""><span>Субъекты РФ, в которых уже реализован проект.</span>
+                <div class="map" data-aos="zoom-in" data-aos-duration="1200"><img src="img/map.png" alt=""></div>
+                <div class="legend" data-aos="fade-left" data-aos-duration="1400">
+                    <div><img src="img/blue-point.svg" alt=""><span>Субъекты РФ, в которых уже реализован проект</span>
                     </div>
-                    <div><img src="img/red-point.svg" alt=""><span>Субъекты РФ, в которых планируется запуск проекта в 2019-2020 годах.</span>
+                    <div><img src="img/red-point.svg" alt=""><span>Субъекты РФ, в которых планируется запуск проекта в 2019-2020 годах</span>
                     </div>
                 </div>
-                <div class="info-box">
+
+
+            </div>
+
+        </div>
+
+        <div class="fluid-container start-desc">
+            <div class="container">
+                <div class="info-box"  data-aos="fade-right" data-aos-duration="1400">
                     Творческое воспитание гармонично развитой и социально ответственной личности на основе
                     духовно-нравственных ценностей народов Российской Федераций, исторических и национально-культурных
                     традиций
@@ -89,7 +98,7 @@
                 <h2>ГРАЖДАНСКАЯ ИДЕНТИЧНОСТЬ</h2>
                 <div class="row">
                     <div class="col-md-6 col-12">
-                        <div class="info-block ">
+                        <div class="info-block " data-aos="fade-up" data-aos-offset="250" data-aos-duration="1000">
                             <div class="title">
                                 <img src="img/self-ident.png" alt="">
                                 <h3>Самоидентификация</h3>
@@ -102,7 +111,7 @@
                         </div>
                     </div>
                     <div class="col-md-6 col-12">
-                        <div class="info-block ">
+                        <div class="info-block " data-aos="fade-up" data-aos-offset="250" data-aos-duration="1000">
                             <div class="title">
                                 <img src="img/soc-skills.png" alt="">
                                 <h3>Социальные навыки</h3>
@@ -114,20 +123,20 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-12">
-                        <div class="info-block ">
+                    <div class="col-md-6 col-12" data-aos="fade-up" data-aos-offset="250" data-aos-duration="1000">
+                        <div class="info-block " >
                             <div class="title">
                                 <img src="img/creativity.png" alt="">
-                                <h3>Творческое развите</h3>
+                                <h3>Творческое развитие</h3>
                             </div>
                             <div class="text">
                                 Ориентация на практику и прикладную направленность. Созидание и творчество – основа
-                                сохранения ациональных культурных традиций.
+                                сохранения национальных культурных традиций.
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-12">
-                        <div class="info-block ">
+                        <div class="info-block " data-aos="fade-up" data-aos-offset="250" data-aos-duration="1000">
                             <div class="title">
                                 <img src="img/humanity.png" alt="">
                                 <h3>Человек и общество</h3>
@@ -148,7 +157,7 @@
         <div class="fluid-container contents">
             <div class="header red">Содержание</div>
             <div class="container">
-                <h2>Социальная платформа творческого роста</h2>
+                <h2 >Социальная платформа творческого роста</h2>
                 <div class="meta">
                     <div class="count">85 субьектов Российской Федерации</div>
                     <div class="details">
@@ -174,33 +183,56 @@
                                 региональной культуры
                             </li>
                             <li>Адаптация контента под разные потребности участников образовательного процесса</li>
-                            <li>Развитие межпредметных связей и УУД</li>
+                            <li>Развитие межпредметных связей и универсальных учебных действий</li>
                         </ul>
                     </div>
-                    <div class="col-12 col-md-7 order-1 order-md-2">
-                        <img src="img/books.png" alt="">
+                    <div class="col-12 col-md-7 order-1 order-md-2" data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="250">
+                        <img src="img/books.png" alt="" >
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="fluid-container books-slider">
+        <!--div class="fluid-container books-slider">
             <div class="container">
                 <div class="slider">
                     <div class="left-btn"><img src="img/right-arrow.svg" alt=""></div>
-                    <div class="display"><img src="img/book-pages.jpg" alt=""></div>
+                    <div class="display" data-aos="zoom-in" data-aos-duration="1000" ><img src="img/7_mosobl.jpg" alt=""></div>
                     <div class="right-btn"><img src="img/right-arrow.svg" alt=""></div>
                 </div>
             </div>
+        </div-->
+
+
+        <div class="fluid-container books-slider">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000" >
+                <vueper-slides :dragging-distance="50" :slide-ratio="0.65" :fade="false" :bullets="false" :width="900" >
+                    <vueper-slide key="1"  image="img/books/book_1.jpg"></vueper-slide>
+                    <vueper-slide key="2"  image="img/books/book_2.jpg"></vueper-slide>
+                    <vueper-slide key="3"  image="img/books/book_3.jpg"></vueper-slide>
+                    <vueper-slide key="4"  image="img/books/book_4.jpg"></vueper-slide>
+                    <vueper-slide key="5"  image="img/books/book_5.jpg"></vueper-slide>
+                    <vueper-slide key="6"  image="img/books/book_6.jpg"></vueper-slide>
+                    <vueper-slide key="7"  image="img/books/book_7.jpg"></vueper-slide>
+                    <vueper-slide key="8"  image="img/books/book_8.jpg"></vueper-slide>
+                    <vueper-slide key="9"  image="img/books/book_9.jpg"></vueper-slide>
+                    <vueper-slide key="10"  image="img/books/book_10.jpg"></vueper-slide>
+                    <vueper-slide key="11"  image="img/books/book_11.jpg"></vueper-slide>
+                    <vueper-slide key="12"  image="img/books/book_12.jpg"></vueper-slide>
+                    <vueper-slide key="13"  image="img/books/book_13.jpg"></vueper-slide>
+                </vueper-slides>
+            </div>
         </div>
+
+
 
         <div class="fluid-container books-examples">
             <div class="top-border"></div>
             <div class="container">
-                <img src="img/rost-obl.png" class="rost" alt="">
-                <img src="img/sar-obl.png" class="sar" alt="">
-                <img src="img/krasn-kr.png" class="kras" alt="">
-                <img src="img/msk.png" class="msk" alt="">
+                <img src="img/rost-obl.png" data-aos="zoom-in"  data-aos-delay="250" data-aos-duration="1000" class="rost" alt="">
+                <img src="img/sar-obl.png"  data-aos="zoom-in"  data-aos-delay="250" class="sar" alt="" data-aos-duration="1000">
+                <img src="img/krasn-kr.png"  data-aos="zoom-in" data-aos-delay="250" data-aos-duration="1000" class="kras" alt="">
+                <img src="img/msk.png" data-aos="zoom-in" data-aos-delay="250" data-aos-duration="1000" class="msk" alt="">
                 <div class="info">
                     До окончания 2019 года будут изданы новые учебные пособия: «Моя Ростовская область», «Моя
                     Саратовская область», «Моя Ленинградская область», «Мой Краснодарский край», «Моя Московская
@@ -215,13 +247,13 @@
             <div class="sub-header blue">ЭТНОГРАФИЧЕСКАЯ СОЦИАЛЬНАЯ СЕТЬ</div>
             <div class="container">
                 <div class="row">
-                    <div class="col-12 order-2 col-md-6 order-md-2">
+                    <div class="col-12 order-2 col-md-6 order-md-2" data-aos="fade-up" data-aos-duration="1000">
                         <ul>
                             <li>Общенациональная образовательная социальная сеть для детей, педагогов и родителей</li>
                             <li>Совместное творчество, командная работа, игровые практики в образовании</li>
                         </ul>
                     </div>
-                    <div class="col-12 order-1 col-md-6 order-md-2"><img src="img/little-peoples.png" alt=""></div>
+                    <div class="col-12 order-1 col-md-6 order-md-2" data-aos="zoom-in" data-aos-duration="1000"><img src="img/little-peoples.png" alt=""></div>
                 </div>
             </div>
         </div>
@@ -230,10 +262,10 @@
         <div class="fluid-container methodics">
             <div class="sub-header blue">МЕТОДИЧЕСКАЯ ПОДДЕРЖКА ПЕДАГОГОВ</div>
             <div class="container">
-                <div class="row">
+                <div class="row" data-aos="fade-right" data-aos-delay="150" data-aos-duration="1000">
 
-                    <div class="col-12 col-md-6 text-center"><img src="img/scheme.png" alt=""></div>
-                    <div class="col-12 col-md-6">
+                    <div class="col-12 col-md-6 text-center" ><img src="img/scheme.png" alt=""></div>
+                    <div class="col-12 col-md-6" >
                         <ul>
                             <li>Методические рекомендации</li>
                             <li>Методическая онлайн-поддержка преподавателей</li>
@@ -249,19 +281,16 @@
             <div class="sub-header blue">МАСТЕР-КЛАССЫ</div>
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-md-6">
-                        <div class="pic"><img src="img/master-class1.jpg" alt="" @click="showVideo('master1')"></div>
+                    <div class="col-12 col-md-6" data-aos="zoom-in-left" data-aos-duration="1000">
+                        <div class="pic" @click="showVideo(1)"><img class="video-preview" src="img/master-class1.jpg" alt="" ></div>
                         <div class="text">
-                            Мастер класс проводит Наина Величко — известный художник и педагог. Участник международных
-                            фестивалей и выставок, обладатель медали и диплома Союза дизайнеров России
+                            Наина Величко — известный художник и педагог. Участник международных фестивалей и выставок, обладатель медали и диплома Союза дизайнеров России
                         </div>
                     </div>
-                    <div class="col-12 col-md-6">
-                        <div class="pic"><img src="img/master-class2.jpg" alt="" @click="showVideo('master1')"></div>
+                    <div class="col-12 col-md-6" data-aos="zoom-in-right" data-aos-duration="1000" >
+                        <div class="pic"  @click="showVideo(2)"><img class="video-preview" src="img/master-class2.jpg" alt=""></div>
                         <div class="text">
-                            Мастер-класс проводит Татьяна Николаевна Проснякова — руководитель сайта Страна Мастеров, автор
-                            учебников и книг по художественному труду для начальной школы, автор в системе развивающего
-                            обучения, разработанной Л. В. Занковым, ведущая мастер-классов.
+                            Татьяна Проснякова — руководитель сайта «Страна мастеров», автор учебников и книг по художественному труду для начальной школы, автор в системе развивающего обучения, разработанной Л. В. Занковым, ведущая мастер-классов
                         </div>
                     </div>
                 </div>
@@ -271,87 +300,149 @@
         <div class="fluid-container diorams">
             <div class="sub-header blue">УЧЕБНЫЕ ДИОРАМЫ — ГЕНЕРАТОРЫ СЧАСТЬЯ</div>
             <div class="container">
-                <div class="info-box">
+                <div class="info-box"  data-aos="fade-down" data-aos-offset="350" data-aos-duration="1000" data-aos-delay="250">
                     Формирование живой экспозиции на основе природы и символов родного края ― инструмента персональной и
                     коллективной идентификации
                 </div>
-                <div class="dio-item">
-                    <img src="img/dio1.png" alt="">
-                    <div class="dio-info">Диорама «Кубанский двор»</div>
+
+                <div class="container" data-aos="zoom-in" data-aos-duration="1000" >
+                    <vueper-slides  :arrows="false" :transition-speed="1500" :touchable="false" slide-content-outside="bottom" :fade="true" slide-content-outside-class="dio-title" :slide-ratio="0.65"  :autoplay="true" :bullets="true" :width="900" >
+                        <vueper-slide key="1"  image="img/dio4.jpg"  title="Кубанский двор"></vueper-slide>
+                        <vueper-slide key="2"  image="img/dio2.jpg " title="Подмосковье"></vueper-slide>
+                        <vueper-slide key="3"  image="img/dio3.jpg" title="Вороний праздник"></vueper-slide>
+                    </vueper-slides>
                 </div>
+                <!--dioram inline-template>
+                    <div class="dio-wrapper" data-aos="zoom-in" data-aos-offset="250" data-aos-duration="1000">
+                        <div class="dio-line" ref="line" @click="next">
+                            <div class="dio-item">
+                                <img src="img/dio4.jpg" alt="" >
+                                <div class="dio-info">Кубанский двор</div>
+                            </div>
+                            <div class="dio-item">
+                                <img src="img/dio2.jpg" alt="" >
+                                <div class="dio-info">Подмосковье</div>
+                            </div>
+                            <div class="dio-item">
+                                <img src="img/dio3.jpg" alt="">
+                                <div class="dio-info">Богатство Югры</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </dioram-->
+
             </div>
         </div>
+
 
         <div class="fluid-container contests">
             <div class="sub-header blue">Региональные и всероссийские творческие конкурсы</div>
-            <div class="info-box left blue ">
-                <span>Основные цели конкурсов – воспитание бережного отношения человека к окружающей среде, а также формирование интереса к быту и традициям народов региона, к природе.</span>
-            </div>
-            <div class="info-box right red">
-                <span>Ключевой задачей конкурса является развитие творческого потенциала учащихся через вовлечение в проектную деятельность вместе с родителями и преподавателями.</span>
-            </div>
-        </div>
-
-
-        <div class="fluid-container ugra">
             <div class="container">
-                <h2>Региональный творческий конкурс «Моя Югра»</h2>
-                <div class="slider">
+                <div class="row" data-aos="fade-right" data-aos-delay="150" data-aos-duration="1000">
+                    <div class="col-12 col-md-7" >
+                        <ul>
+                            <li>Основные цели конкурсов – воспитание бережного отношения человека к окружающей среде, а также формирование интереса к быту и традициям народов региона, к природе.</li>
+                            <li>Ключевой задачей конкурса является развитие творческого потенциала учащихся через вовлечение в проектную деятельность вместе с родителями и преподавателями.</li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-5 text-center" ><img src="img/contests.png" alt=""></div>
 
-                    <ul>
-                        <li><img src="img/galery1.jpg" alt=""></li>
-                        <li><img src="img/galery2.jpg" alt=""></li>
-                        <li><img src="img/galery1.jpg" alt=""></li>
-                        <li><img src="img/galery2.jpg" alt=""></li>
-                        <li><img src="img/galery1.jpg" alt=""></li>
-                        <li><img src="img/galery2.jpg" alt=""></li>
-                    </ul>
                 </div>
-                <button class="reference">Перейти</button>
             </div>
         </div>
 
-        <div class="fluid-container krym">
+
+
+        <!--div class="fluid-container ugra">
             <div class="container">
-                <h2>Региональный творческий конкурс для Республики Крым и г. Севастополя «Живое слово родного края»</h2>
-                <div class="slider">
-                    <ul>
-                        <li><img src="img/galery_n1.jpg" alt=""></li>
-                        <li><img src="img/galery_n2.jpg" alt=""></li>
-                        <li><img src="img/galery_n1.jpg" alt=""></li>
-                        <li><img src="img/galery_n2.jpg" alt=""></li>
-                        <li><img src="img/galery_n1.jpg" alt=""></li>
-                        <li><img src="img/galery_n2.jpg" alt=""></li>
-                    </ul>
+                <h2>«Моя Югра» (XMAO-ЮГРА)</h2>
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <ul>
+                            <li><img src="img/ygra/001.jpg" data-aos="zoom-in" data-aos-delay="250" data-aos-duration="1000" alt=""></li>
+                            <li><img src="img/ygra/002.jpg"  data-aos="zoom-in" data-aos-delay="250" data-aos-duration="1000" alt=""></li>
+                            <li><img src="img/ygra/003.jpg"  data-aos="zoom-in" data-aos-delay="250" data-aos-duration="1000" alt=""></li>
+                            <li><img src="img/ygra/004.jpg" data-aos="zoom-in" data-aos-delay="250" data-aos-duration="1000" alt=""></li>
+                            <li><img src="img/ygra/005.jpg" alt=""></li>
+                            <li><img src="img/ygra/006.jpg" alt=""></li>
+                            <li><img src="img/ygra/007.jpg" alt=""></li>
+                            <li><img src="img/ygra/009.jpg" alt=""></li>
+                        </ul>
+                    </div>
                 </div>
-                <button class="reference">Перейти</button>
+
+                <a href="https://xn--80aiobbvfcmc.xn--d1acj3b/" target="_blank"><button class="reference">Перейти</button></a>
+            </div>
+        </div-->
+
+            <div class="fluid-container ugra" data-aos="fade-up">
+                    <h2>«Моя Югра» (XMAO-ЮГРА)</h2>
+                    <vueper-slides  :arrows="true" class="no-shadow ug-slider" :touchable="false" fixed-height="300px"  :infinite="false"  :slide-ratio="0.45"  :autoplay="false" :visible-slides="3"  :bullets="false"  >
+                        <vueper-slide key="1"  image="img/ygra/001.jpg"  class="slide-item"></vueper-slide>
+                        <vueper-slide key="2"  image="img/ygra/002.jpg" class="slide-item"></vueper-slide>
+                        <vueper-slide key="3"  image="img/ygra/003.jpg" class="slide-item"></vueper-slide>
+                        <vueper-slide key="4"  image="img/ygra/004.jpg" class="slide-item"></vueper-slide>
+                        <vueper-slide key="5"  image="img/ygra/005.jpg" class="slide-item"></vueper-slide>
+                    </vueper-slides>
+
+                    <a href="https://xn--80aiobbvfcmc.xn--d1acj3b/" target="_blank"><button class="reference">Перейти</button></a>
             </div>
 
-        </div>
+
+        <!--div class="fluid-container krym">
+            <div class="container">
+                <h2>«Живое слово родного края» (РЕСПУБЛИКА КРЫМ И&nbsp;Г.&nbsp;СЕВАСТОПОЛЬ)</h2>
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <ul>
+                            <li><img src="img/krym/001.jpg" data-aos="zoom-in" data-aos-delay="250" data-aos-duration="1000" alt=""></li>
+                            <li><img src="img/krym/002.jpg"  data-aos="zoom-in" data-aos-delay="250" data-aos-duration="1000" alt=""></li>
+                            <li><img src="img/krym/003.jpg"  data-aos="zoom-in" data-aos-delay="250" data-aos-duration="1000" alt=""></li>
+                            <li><img src="img/krym/004.jpg" data-aos="zoom-in" data-aos-delay="250" data-aos-duration="1000" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="https://xn--80aaap7bcfmdfl9n.xn--p1ai/" target="_blank"><button class="reference">Перейти</button></a>
+            </div>
+
+        </div-->
+
+            <div class="fluid-container krym" data-aos="fade-up">
+                    <h2>«Живое слово родного края» (РЕСПУБЛИКА КРЫМ И&nbsp;Г.&nbsp;СЕВАСТОПОЛЬ)</h2>
+                    <vueper-slides  :arrows="true" class="no-shadow ug-slider" :touchable="false" fixed-height="300px"  :infinite="false"  :slide-ratio="0.45"  :autoplay="false" :visible-slides="3"  :bullets="false" >
+                        <vueper-slide key="1"  image="img/krym/001.jpg"  class="slide-item"></vueper-slide>
+                        <vueper-slide key="2"  image="img/krym/002.jpg" class="slide-item"></vueper-slide>
+                        <vueper-slide key="3"  image="img/krym/003.jpg" class="slide-item"></vueper-slide>
+                        <vueper-slide key="4"  image="img/krym/004.jpg" class="slide-item"></vueper-slide>
+                    </vueper-slides>
+                    <a href="https://xn--80aaap7bcfmdfl9n.xn--p1ai/" target="_blank"><button class="reference">Перейти</button></a>
+
+            </div>
 
 
         <div class="fluid-container results">
             <div class="header red">Результаты</div>
             <div class="container">
-                <h2>ЭТНОГРАФИЧЕСКАЯ МОЗАИКА</h2>
-                <div class="content">
+                <h2 data-aos="fade-up" data-aos-duration="1000">ЭТНОГРАФИЧЕСКАЯ МОЗАИКА</h2>
+                <div class="content" data-aos="fade-up" data-aos-duration="1000">
                     <div class="info-box left">
-                        Формирование визуального культурного кода как основы национального брендинга Россикйской
-                        федерации
+                        Формирование визуального культурного кода как основы национального брендинга Российской
+                        Федерации
                     </div>
                     <div class="info-box right">Поддержка региональных специалистов разного профиля: историков,
-                        этнографоф, краеведов и др.
+                        этнографов, краеведов и др.
                     </div>
                     <div class="info-box left">Поддержка художественных промыслов, национальных языков, культур народов
-                        России.
+                        России
                     </div>
-                    <div class="info-box right">Обеспечивание высокого уровня социальной вовлеченности: учащиеся и
-                        родители, педагоги и воспитатели.
+                    <div class="info-box right">Обеспечение высокого уровня социальной вовлеченности: учащиеся и
+                        родители, педагоги и воспитатели
                     </div>
                     <div class="info-box left">Эффективная технология формирования важнейших компетенций XXI века у
-                        детей начальных классов.
+                        детей начальных классов
                     </div>
-                    <div class="info-box right">Международное развитие - чемпионат «Добрых дел» social skills для детей
+                    <div class="info-box right">Международное развитие - чемпионат «Добрых дел» -  Social skills для детей<br>
                         5-10 лет
                     </div>
                 </div>
@@ -362,13 +453,12 @@
         <div class="fluid-container footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-5">Создатель проекта Научно-образовательный союз развития языковой и информационной
-                        культуры «Родное слово».
+                    <div class="col-12 order-1  col-md-2 text-right" ><img src="img/logo.svg" alt=""></div>
+                    <div class="col-12 order-2  col-md-5 align-center pt-2" >Научно-образовательный союз развития языковой и информационной культуры «Родное слово»
                     </div>
-                    <div class="col-4 text-right"><img src="img/logo.svg" alt=""></div>
-                    <div class="col-3">
+                    <div class="col-12 order-3 offset-md-2 col-md-3 text-right pt-2">
                         <div class="tel">Тел.: +7(495) 150-44-00</div>
-                        <div class="email">mail: info@rodnoeslovo.ru</div>
+                        <div class="email">E-mail: info@rodnoeslovo.ru</div>
                     </div>
                 </div>
             </div>
@@ -376,18 +466,21 @@
 
     </div>
 
-    <modal v-model="showVideo1" width="660" height="342">
+    <modal v-model="showVideo1" width="960" height="560" @on-close="onCloseModal">
         <div class="video">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ACr75ZwScik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe id="player1" width="820" height="540" src="https://www.youtube.com/embed/jHy239xBWZc?version=3&enablejsapi=1&start=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
     </modal>
-    <modal v-model="showVideo2" width="660" height="342" >
+    <modal v-model="showVideo2" width="960" height="560" @on-close="onCloseModal">
         <div class="video">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/ACr75ZwScik" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe id="player2" width="820" height="540" src="https://www.youtube.com/embed/RsEF_7Ozh9Q?version=3&enablejsapi=1&start=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </modal>
 </div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <!-- built files will be auto injected -->
+
 </body>
 </html>

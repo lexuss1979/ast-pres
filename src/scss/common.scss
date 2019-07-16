@@ -20,6 +20,7 @@ body {
   height: 60px;
   background: #C90C0F;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
 }
 .sub-header.blue{
   width: 100%;
@@ -57,7 +58,7 @@ ul.red-bullet-ul >li{
 
 
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 450px) {
   body {
     background: #FFFDF9;
   }
@@ -65,6 +66,7 @@ ul.red-bullet-ul >li{
     font-size:18px;
     line-height: 40px;
     height: 40px;
+    text-transform: uppercase;
   }
   .sub-header.blue{
     height: auto;
@@ -76,4 +78,11 @@ ul.red-bullet-ul >li{
 
 .video{
   padding: 10px;
+}
+
+@media screen and (min-width: 1200px){
+  .container{
+    max-width: 960px !important;
+  }
+
 }

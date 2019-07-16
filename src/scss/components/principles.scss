@@ -7,7 +7,7 @@
     font-size: 36px;
     line-height: 44px;
     /* identical to box height */
-    margin-left: 45px;
+    margin-left: 15px;
     color: #0080C9;
   }
 
@@ -45,9 +45,11 @@
 }
 
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 450px){
   .principles{
-
+    .container{
+      padding: 20px 0;
+    }
     .row{
       max-width: 100%;
     }
@@ -56,6 +58,7 @@
     h2{
       font-size: 24px;
       line-height: 29px;
+      margin-left: 15px !important;
     }
     .info-block{
       background: transparent;
@@ -64,9 +67,14 @@
       font-size: 16px;
       line-height: 20px;
       max-width: 100% !important;
+      margin:0;
+      height: auto;
       .title{
-        font-size: 18px;
-        line-height: 22px;
+        h3{
+          font-size: 18px !important;
+          line-height: 22px !important;
+        }
+
         border-bottom: 2px solid #1D5DA8;
         padding-bottom: 10px;
       }

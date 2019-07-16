@@ -1,5 +1,5 @@
 .footer{
-  background: #003770;
+  background-color: #003770 !important;
   height: 100px;
   font-style: normal;
   font-weight: 500;
@@ -9,6 +9,10 @@
   color: #FFFFFF;
   padding: 24px;
 
+  .container{
+    max-width: 1170px !important;
+  }
+
   img{
     width: 153px;
     display: block;
@@ -16,12 +20,22 @@
   }
 
   .tel{
-    padding-bottom:20px;
+    //padding-bottom:20px;
   }
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 450px){
   .footer{
-    display: none;
+    height: 268px;
+    text-align: center;
+    padding: 14px;
+    img{
+      display: block;
+      margin: auto;
+    }
+    .tel{
+      padding-top:10px;
+    }
   }
+
 }

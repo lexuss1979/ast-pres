@@ -9,9 +9,12 @@
     "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
+    "animate.css": "^3.7.2",
+    "aos": "^2.3.4",
     "core-js": "^2.6.5",
     "vue": "^2.6.10",
     "vue-router": "^3.0.3",
+    "vueperslides": "^1.19.1",
     "vuex": "^3.0.1"
   },
   "devDependencies": {

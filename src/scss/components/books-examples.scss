@@ -1,5 +1,5 @@
 .books-examples{
-  background: url("/img/texture.jpg");
+  background: url("/img/texture_1.jpg");
   padding: 20px 0;
   margin: 70px 0;
   .top-border{
@@ -19,32 +19,32 @@
     position: relative;
     .rost{
       position: absolute;
-      top: 50px;
-      left: 100px;
+      top: 20px;
+      left: 0px;
       z-index: 10;
     }
     .msk{
       position: absolute;
       top: 150px;
-      right: 80px;
+      right: 0;
       z-index: 10;
     }
     .kras{
       position: absolute;
       top: 150px;
-      right: 207px;
+      right: 129px;
       z-index: 12;
     }
     .sar{
       position: absolute;
-      top: 50px;
-      left: 326px;
+      top: 20px;
+      left: 236px;
       z-index: 8;
     }
     .info{
       position: absolute;
       top: 390px;
-      left: 100px;
+      left: 0;
       z-index: 8;
       width: 573px;
       font-style: normal;
@@ -58,7 +58,7 @@
 }
 
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 450px) {
   .books-examples{
     .container{
       height: 770px !important;
