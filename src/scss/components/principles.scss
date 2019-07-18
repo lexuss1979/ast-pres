@@ -44,14 +44,34 @@
   }
 }
 
+@media screen and (max-width: 768px){
+  .principles{
+
+    .container:first-child{
+      padding: 50px 0  !important;
+    }
+    .container:last-child{
+      padding: 0 0 50px 0  !important;
+    }
+    .info-block{
+      max-width:95%;
+      font-size: 16px !important;
+      line-height: 20px !important;
+      .title{
+        h3{
+          font-size: 18px !important;
+          line-height: 22px !important;
+        }
+      }
+    }
+  }
+
+}
 
 @media screen and (max-width: 450px){
   .principles{
     .container{
       padding: 20px 0;
-    }
-    .row{
-      max-width: 100%;
     }
 
 

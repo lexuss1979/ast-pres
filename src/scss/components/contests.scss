@@ -32,6 +32,14 @@
 
 @media screen and (max-width: 450px){
   .contests{
-
+    .container{
+      margin: 20px auto 0 auto;
+    }
+      ul{
+        padding-left: 0;
+      }
+    img{
+      padding: 0 25px 10px 25px;
+    }
   }
 }

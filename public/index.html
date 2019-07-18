@@ -14,10 +14,10 @@
 <div id="app">
     <div class="page-container">
         <div class="top-menu  container-fluid">
-            <div class="container">
+            <div class="container container-wide">
                 <div class="row">
-                    <div class="col-5 col-md-4 logo"><img src="img/logo.svg" alt=""></div>
-                    <div class="col-7 col-md-8">
+                    <div class="col-12 col-md-3 col-lg-4 logo"><img src="img/logo.svg" alt="" class="d-block m-auto"></div>
+                    <div class="d-none d-md-block col-md-9 col-lg-8">
                         <div class="contacts">
                             <span>Тел.: +7(495) 150-44-00</span> <span>E-mail: info@rodnoeslovo.ru</span>
                         </div>
@@ -94,8 +94,10 @@
         </div>
         <div class="fluid-container principles">
             <div class="header red">Принципы</div>
-            <div class="container">
+            <div class="container container-wide">
                 <h2>ГРАЖДАНСКАЯ ИДЕНТИЧНОСТЬ</h2>
+            </div>
+            <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-12">
                         <div class="info-block " data-aos="fade-up" data-aos-offset="250" data-aos-duration="1000">
@@ -156,9 +158,10 @@
 
         <div class="fluid-container contents">
             <div class="header red">Содержание</div>
-            <div class="container">
+            <div class="container container-wide">
                 <h2 >Социальная платформа творческого роста</h2>
                 <div class="meta">
+
                     <div class="count">85 субьектов Российской Федерации</div>
                     <div class="details">
                         <ul>
@@ -176,7 +179,7 @@
             <div class="sub-header blue">КРАЕВЕДЧЕСКИЕ ПРОГРАММЫ НОВОГО ТИПА</div>
             <div class="container programs">
                 <div class="row">
-                    <div class="col-12 col-md-5 order-2 order-md-1">
+                    <div class="col-12 col-lg-5 order-2 order-lg-1 ">
                         <ul class="">
                             <li>Ежегодно обновляемые межпредметные пособия нового типа и рабочие тетради</li>
                             <li>Лингвокраеведческие словари с описанием ключевых понятий национальной истории и
@@ -186,7 +189,7 @@
                             <li>Развитие межпредметных связей и универсальных учебных действий</li>
                         </ul>
                     </div>
-                    <div class="col-12 col-md-7 order-1 order-md-2" data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="250">
+                    <div class="col-12 col-lg-7 order-1 order-lg-2" data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="250">
                         <img src="img/books.png" alt="" >
                     </div>
                 </div>
@@ -247,13 +250,13 @@
             <div class="sub-header blue">ЭТНОГРАФИЧЕСКАЯ СОЦИАЛЬНАЯ СЕТЬ</div>
             <div class="container">
                 <div class="row">
-                    <div class="col-12 order-2 col-md-6 order-md-2" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="col-12 order-2 col-lg-6 order-lg-2" data-aos="fade-up" data-aos-duration="1000">
                         <ul>
                             <li>Общенациональная образовательная социальная сеть для детей, педагогов и родителей</li>
                             <li>Совместное творчество, командная работа, игровые практики в образовании</li>
                         </ul>
                     </div>
-                    <div class="col-12 order-1 col-md-6 order-md-2" data-aos="zoom-in" data-aos-duration="1000"><img src="img/little-peoples.png" alt=""></div>
+                    <div class="col-12 order-1 col-lg-6 order-lg-2" data-aos="zoom-in" data-aos-duration="1000"><img src="img/little-peoples.png" alt=""></div>
                 </div>
             </div>
         </div>
@@ -264,8 +267,8 @@
             <div class="container">
                 <div class="row" data-aos="fade-right" data-aos-delay="150" data-aos-duration="1000">
 
-                    <div class="col-12 col-md-6 text-center" ><img src="img/scheme.png" alt=""></div>
-                    <div class="col-12 col-md-6" >
+                    <div class="col-12 col-lg-6 text-center" ><img src="img/scheme.png" alt=""></div>
+                    <div class="col-12 col-lg-6" >
                         <ul>
                             <li>Методические рекомендации</li>
                             <li>Методическая онлайн-поддержка преподавателей</li>
@@ -312,25 +315,6 @@
                         <vueper-slide key="3"  image="img/dio3.jpg" title="Вороний праздник"></vueper-slide>
                     </vueper-slides>
                 </div>
-                <!--dioram inline-template>
-                    <div class="dio-wrapper" data-aos="zoom-in" data-aos-offset="250" data-aos-duration="1000">
-                        <div class="dio-line" ref="line" @click="next">
-                            <div class="dio-item">
-                                <img src="img/dio4.jpg" alt="" >
-                                <div class="dio-info">Кубанский двор</div>
-                            </div>
-                            <div class="dio-item">
-                                <img src="img/dio2.jpg" alt="" >
-                                <div class="dio-info">Подмосковье</div>
-                            </div>
-                            <div class="dio-item">
-                                <img src="img/dio3.jpg" alt="">
-                                <div class="dio-info">Богатство Югры</div>
-                            </div>
-                        </div>
-                    </div>
-
-                </dioram-->
 
             </div>
         </div>
@@ -340,13 +324,13 @@
             <div class="sub-header blue">Региональные и всероссийские творческие конкурсы</div>
             <div class="container">
                 <div class="row" data-aos="fade-right" data-aos-delay="150" data-aos-duration="1000">
-                    <div class="col-12 col-md-7" >
+                    <div class="col-12 order-2 order-md-1 col-md-7" >
                         <ul>
                             <li>Основные цели конкурсов – воспитание бережного отношения человека к окружающей среде, а также формирование интереса к быту и традициям народов региона, к природе.</li>
                             <li>Ключевой задачей конкурса является развитие творческого потенциала учащихся через вовлечение в проектную деятельность вместе с родителями и преподавателями.</li>
                         </ul>
                     </div>
-                    <div class="col-12 col-md-5 text-center" ><img src="img/contests.png" alt=""></div>
+                    <div class="col-12 order-1 order-md-2  col-md-5 text-center" ><img src="img/contests.png" alt=""></div>
 
                 </div>
             </div>
@@ -453,10 +437,10 @@
         <div class="fluid-container footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 order-1  col-md-2 text-right" ><img src="img/logo.svg" alt=""></div>
-                    <div class="col-12 order-2  col-md-5 align-center pt-2" >Научно-образовательный союз развития языковой и информационной культуры «Родное слово»
+                    <div class="col-12 order-1 col-md-3  col-lg-2 text-right" ><img src="img/logo.svg" alt=""></div>
+                    <div class="col-12 order-2 col-md-5  col-lg-5 align-center pt-2 descr" >Научно-образовательный союз развития языковой и информационной культуры «Родное слово»
                     </div>
-                    <div class="col-12 order-3 offset-md-2 col-md-3 text-right pt-2">
+                    <div class="col-12 order-3 col-md-4 offset-lg-1 col-lg-3 text-right pt-2 contacts">
                         <div class="tel">Тел.: +7(495) 150-44-00</div>
                         <div class="email">E-mail: info@rodnoeslovo.ru</div>
                     </div>

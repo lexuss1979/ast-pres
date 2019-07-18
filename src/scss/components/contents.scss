@@ -11,10 +11,12 @@
     color: #0080C9;
     text-transform: uppercase;
     text-align: left;
-    width: 70%;
   }
 
   .meta{
+    max-width: 1024px;
+    margin: auto;
+    padding-top:60px;
     .count{
       font-style: normal;
       font-weight: 500;
@@ -82,7 +84,14 @@
     }
   }
 }
+@media screen and (max-width: 768px){
+  .contents{
 
+    .meta {
+      padding: 0 20px;
+    }
+  }
+}
 @media screen and (max-width: 450px){
   .contents{
     h2{

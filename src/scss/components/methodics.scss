@@ -1,6 +1,6 @@
 .methodics{
   .container{
-    height: 440px;
+    min-height: 440px;
     padding: 100px 0 0 0;
     margin-bottom: 50px;
 
@@ -28,7 +28,14 @@
     }
   }
 }
-
+@media screen and (max-width: 768px){
+  .methodics{
+    min-height: 420px;
+    img{
+      padding-left: 0 !important;
+    }
+  }
+}
 @media screen and (max-width: 450px){
   .methodics{
 

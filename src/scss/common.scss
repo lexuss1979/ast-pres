@@ -80,9 +80,33 @@ ul.red-bullet-ul >li{
   padding: 10px;
 }
 
+
+
 @media screen and (min-width: 1200px){
+  .container.container-wide{
+    max-width: 1180px !important;
+  }
   .container{
     max-width: 960px !important;
   }
 
 }
+
+@media screen and (min-width: 768px){
+  .container.container-wide{
+    max-width: 768px !important;
+  }
+  .container{
+    max-width: 768px !important;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .container.container-wide {
+      max-width: 1024px !important;
+    }
+    .container {
+      max-width: 1024px !important;
+    }
+  }
+}
+
