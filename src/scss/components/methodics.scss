@@ -8,31 +8,41 @@
       padding-left: 50px;
     }
 
-    ul>li{
-      list-style: none;
-      font-weight: 500;
-      font-size: 21px;
-      line-height: 26px;
-      padding-bottom: 20px;
-      display: inline-flex;
-      &:before{
-        content:'•';
-        padding: 10px;
-        margin-top: -14px;
-        font-style: normal;
-        font-weight: 900;
-        font-size: 42px;
-        line-height: 29px;
-        color: #c90c0f;
+    ul{
+      padding-left:0;
+      li{
+        list-style: none;
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 26px;
+        padding-bottom: 20px;
+        display: inline-flex;
+        &:before{
+          content:'•';
+          padding: 10px;
+          margin-top: -14px;
+          font-style: normal;
+          font-weight: 900;
+          font-size: 42px;
+          line-height: 29px;
+          color: #c90c0f;
+        }
       }
+
     }
   }
 }
 @media screen and (max-width: 768px){
   .methodics{
     min-height: 420px;
+    .container{
+      padding:0;
+      margin-bottom: 10px !important;
+    }
     img{
-      padding-left: 0 !important;
+      display: block;
+      margin: 40px auto;
+      padding:0 !important;
     }
   }
 }

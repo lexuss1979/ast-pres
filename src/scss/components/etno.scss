@@ -6,27 +6,30 @@
     padding: 100px 0 0 0 ;
     margin-bottom: 50px;
 
+
     img{
       display: block;
       margin: auto;
     }
-
-    ul>li{
-      list-style: none;
-      font-weight: 500;
-      font-size: 21px;
-      line-height: 26px;
-      padding-bottom: 20px;
-      display: inline-flex;
-      &:before{
-        content:'•';
-        padding: 10px;
-        margin-top: -14px;
-        font-style: normal;
-        font-weight: 900;
-        font-size: 42px;
-        line-height: 29px;
-        color: #c90c0f;
+    ul{
+      padding-left:0;
+      li{
+        list-style: none;
+        font-weight: 500;
+        font-size: 21px;
+        line-height: 26px;
+        padding-bottom: 20px;
+        display: inline-flex;
+        &:before{
+          content:'•';
+          padding: 10px;
+          margin-top: -14px;
+          font-style: normal;
+          font-weight: 900;
+          font-size: 42px;
+          line-height: 29px;
+          color: #c90c0f;
+        }
       }
     }
   }
@@ -36,7 +39,7 @@
   .etno{
     background: none;
     height: auto;
-
+    background: none !important;
     .container{
       padding: 0;
       background: url(/img/bg-path.png) no-repeat top;
@@ -63,6 +66,18 @@
         }
       }
 
+    }
+  }
+}
+
+@media screen and (max-width: 768px){
+  .etno{
+    background: url("/img/etno-bg-long.png") no-repeat -434px -29px;
+    .container{
+      padding-top: 0;
+      img{
+        padding: 50px 0;
+      }
     }
   }
 }

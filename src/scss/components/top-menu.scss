@@ -34,6 +34,9 @@
       line-height: 22px;
       margin-left: 34px;
       cursor: pointer;
+      &:hover{
+        color: #00B4EB;
+      }
     }
   }
 }
@@ -53,6 +56,10 @@
 @media screen and (max-width: 450px){
   .top-menu {
     //display: none;\
+    img{
+      display: block;
+      margin: auto;
+    }
     position: relative;
     .contacts{
       font-size: 12px !important;

@@ -9,6 +9,13 @@ import { VueperSlides, VueperSlide } from 'vueperslides'
 
 import  "./scss/app.scss";
 
+import VueAwesomeSwiper from 'vue-awesome-swiper'
+
+// require styles
+import 'swiper/dist/css/swiper.css'
+
+Vue.use(VueAwesomeSwiper, /* { default global options } */);
+
 Vue.config.productionTip = false;
 
 new Vue({
@@ -17,6 +24,42 @@ new Vue({
     regFolded: true,
     showVideo1: false,
     showVideo2: false,
+    swiperOption:{
+      slidesPerView: 4,
+      spaceBetween: 50,
+      breakpoints: {
+        // when window width is <= 320px
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 10
+        },
+        // when window width is <= 480px
+        480: {
+          slidesPerView: 2,
+          spaceBetween: 20
+        },
+        // when window width is <= 1024px
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30
+        },
+        // when window width is <= 640px
+        1200: {
+          slidesPerView: 4,
+          spaceBetween: 50
+        }
+      },
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      }
+    }
   },
   methods:{
     regToggle(){
@@ -62,11 +105,14 @@ new Vue({
       },
     enableScrolling(){
       window.onscroll=function(){};
-    }
+    },
+
+
   },
   mounted(){
     AOS.init();
   },
+
   components:{
     TopMenu,
     Modal,

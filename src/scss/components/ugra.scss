@@ -102,11 +102,12 @@
       outline: none !important;
     }
   }
+
 }
 
 @media screen and (max-width: 450px){
   .ugra{
-    padding-bottom: 0;
+    padding-bottom: 20px;
     .container{
       padding-bottom:0;
     }
@@ -117,17 +118,8 @@
       text-align: center;
       text-transform: none;
     }
-    .slider{
-      margin: 24px auto 22px auto;
-      ul{
-        width: 1230px;
-        li {
-          width: 170px;
-          img{
-            width: 100%;
-          }
-        }
-      }
+    .new-slider{
+      margin-bottom:0 !important;
     }
 
 

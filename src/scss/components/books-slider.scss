@@ -80,3 +80,30 @@
     }
   }
 }
+
+@media screen and (max-width: 768px){
+  .books-slider{
+    .vueperslides__arrows .vueperslides__arrow.vueperslides__arrow--next{
+      margin-right:-17px;
+      background: rgba(0, 55, 112, 0.7);
+      &:focus{
+        outline: none!important;
+      }
+      svg{
+        margin-top: -5px;
+        color:white;
+      }
+    }
+    .vueperslides__arrows .vueperslides__arrow.vueperslides__arrow--prev{
+      &:focus{
+        outline: none!important;
+      }
+      background: rgba(0, 55, 112, 0.7);
+      margin-left:-17px;
+      svg{
+        margin-top: -5px;
+        color:white;
+      }
+    }
+  }
+}

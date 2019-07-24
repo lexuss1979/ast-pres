@@ -50,28 +50,7 @@
 
   }
 }
-@media screen and (max-width: 768px){
-  .results{
 
-    .container{
-
-      .content{
-
-        .info-box{
-
-          &:nth-child(1){margin-top: 20px}
-          &:nth-child(2){margin-top: 30px}
-          &:nth-child(3){margin-top: 22px}
-          &:nth-child(4){margin-top: 19px}
-          &:nth-child(5){margin-top: 23px}
-          &:nth-child(6){margin-top: 28px}
-        }
-
-      }
-
-    }
-  }
-}
 
 @media screen and (max-width: 450px){
   .results{
@@ -91,7 +70,6 @@
       .info-box{
         font-size: 16px !important;
         line-height: 20px !important;
-        margin: 20px 0 !important;
         &.left{
           padding: 0 104px 0 15px !important;
         }
@@ -99,12 +77,12 @@
           padding: 0 15px 0 104px !important;
         }
 
-        &:nth-child(1){margin-top: 20px;}
-        &:nth-child(2){margin-top: 49px;}
-        &:nth-child(3){margin-top: 35px;}
-        &:nth-child(4){margin-top: 38px;}
-        &:nth-child(5){margin-top: 36px;}
-        &:nth-child(6){margin-top: 43px;}
+        &:nth-child(1){margin-top: 20px !important; }
+        &:nth-child(2){margin-top: 40px !important;}
+        &:nth-child(3){margin-top: 35px !important;}
+        &:nth-child(4){margin-top: 38px !important;}
+        &:nth-child(5){margin-top: 36px !important;}
+        &:nth-child(6){margin-top: 43px !important;}
       }
     }
   }
@@ -119,13 +97,35 @@
       .content{
         height: auto;
         .info-box{
-
           &:nth-child(1){margin-top: 11px !important}
           &:nth-child(2){margin-top: 30px !important}
-          &:nth-child(3){margin-top: 0 !important}
-          &:nth-child(4){margin-top: -10px !important}
-          &:nth-child(5){margin-top: -8px !important}
+          &:nth-child(3){margin-top: 22px !important}
+          &:nth-child(4){margin-top: 9px !important}
+          &:nth-child(5){margin-top: 12px !important}
           &:nth-child(6){margin-top: 28px !important}
+        }
+
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width: 768px ){
+  .results{
+
+    .container{
+
+      .content{
+
+        .info-box{
+
+          &:nth-child(1){margin-top: 20px}
+          &:nth-child(2){margin-top: 30px}
+          &:nth-child(3){margin-top: 22px}
+          &:nth-child(4){margin-top: 19px}
+          &:nth-child(5){margin-top: 23px}
+          &:nth-child(6){margin-top: 28px}
         }
 
       }

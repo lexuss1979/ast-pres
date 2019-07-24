@@ -16,7 +16,7 @@
   .meta{
     max-width: 1024px;
     margin: auto;
-    padding-top:60px;
+    padding-top:40px;
     .count{
       font-style: normal;
       font-weight: 500;
@@ -80,15 +80,22 @@
     img{
       display: block;
       margin: auto;
-      padding: 65px ;
+      padding: 65px 0;
     }
   }
 }
 @media screen and (max-width: 768px){
   .contents{
+    .container.programs{
+      padding: 0;
 
+      img{
+        padding:10px 0;
+      }
+    }
     .meta {
       padding: 0 20px;
+
     }
   }
 }
@@ -107,17 +114,20 @@
         max-width: 100%;
       }
     }
+
     .count{
       font-size: 18px !important;
       line-height: 22px !important;
-      width: 70%;
-      margin: auto;
+      padding-left:30%;
+      margin-right: 0!important;
+      text-align: right !important;
 
     }
     .details{
       font-size: 14px !important;
       line-height: 16px !important;
       padding: 10px;
+      text-align: right !important;
       ul{
         padding: 0!important;
       }
@@ -128,7 +138,7 @@
         margin:0;
       }
       img{
-        padding: 10px;
+        padding: 10px 0;
         width:100%;
         margin: auto;
         display: block;
